@@ -18,6 +18,9 @@
         <?php include_once("navbar.php") ?>
 
       </div>
+      <div class="">
+        <?php include_once("body.php") ?>
+      </div>
 
   </body>
 </html>
