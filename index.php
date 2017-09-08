@@ -14,5 +14,10 @@
     <title>Tienda Motorola</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <div class="cointaner-fluid">
+        <?php include_once("navbar.php") ?>
+
+      </div>
+
+  </body>
 </html>
