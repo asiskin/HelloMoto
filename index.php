@@ -16,11 +16,9 @@
   <body>
       <div class="cointaner-fluid">
         <?php include_once("navbar.php") ?>
-
-      </div>
-      <div class="">
+       <div class="">
         <?php include_once("body.php") ?>
       </div>
-
+	 </div>
   </body>
 </html>
