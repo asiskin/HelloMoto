@@ -11,6 +11,8 @@
     <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- Chicos cree un css para el foot y esta puesto en la carpeta corespondiente-->
+    <link rel="stylesheet" type="text/css" href="css/Footer.css">
     <title>Tienda Motorola</title>
   </head>
   <body>
@@ -21,6 +23,8 @@
       <div class="">
         <?php include_once("body.php") ?>
       </div>
-
+      <div class="foot">
+        <?php include_once("Footer.php") ?>
+      </div>
   </body>
 </html>
