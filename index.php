@@ -12,21 +12,20 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <!-- Chicos cree un css para el foot y esta puesto en la carpeta corespondiente-->
-    <link rel="stylesheet" type="text/css" href="css/Footer.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <title>Tienda Motorola</title>
   </head>
   <body>
       <div class="cointaner">
-        <?php include_once("navbar.php") ?>
-       <div class="">
-        <?php include_once("body.php") ?>
-      </div>
-<<<<<<< HEAD
-	 </div>
-=======
-      <div class="foot">
-        <?php include_once("Footer.php") ?>
-      </div>
->>>>>>> 5b26ca834590bee5cbdf06644e0e9b1b9b573836
+            <?php include_once("navbar.php") ?>
+          <div class="">
+            <?php include_once("body.php") ?>
+          </div>
+          <div class="foot">
+            <?php include_once("footer.php") ?>
+          </div>
+     </div>
+
+
   </body>
 </html>

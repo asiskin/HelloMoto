@@ -1,32 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
-
     box-sizing: border-box!important;
-    padding-top: 54px;
+    height: 100%;
+
 }
 
-.navbar-nav {
-    text-align: center;
-  > li {
-    float: none;
-    display: inline-block;
-  }
+.navbar-default {
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 0px;
+  padding: 10px;
 }
 
+.nav > li.active > a {
+  background-color: rgb(36,127,213);
+}
+.nav {
+font-size:  16px;
+font-weight: bold;
+}
 
+.navbar-inverse {
+     background-color:  rgb(36,127,213);
+     color: white!important;
+     }
 
+.navbar-nav:hover {
+
+  color: rgb(36,127,213);
+
+}
 .navbar-brand {
+  padding: 0px;
+  margin-right: 20px;
+}
+.navbar-brand>img {
   display: inline-block;
-  align-items: center;
-  position: absolute;
+  height: 55px;
+  width: auto;
+  position: relative;
+  margin-left: 320px;
+  margin-bottom: 40px;
 }
-.logo img {
-  width: 300px;
+
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
 }
 
 
-
-
-@media (max-width: 767px){
+@media (max-width: 768px){
 .carousel .row .span3 {
 display: block;
 float: left;
@@ -36,4 +98,14 @@ margin-left: 0;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
 }
+.navbar-brand>img  {
+  position: relative;
+  left: 50%;
+}
+}
+
+@media (max-width: 900px){
+.navbar-form { display: none}
+.navbar-brand>img  { margin: 0 auto;}
+
 }
