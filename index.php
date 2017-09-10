@@ -14,7 +14,7 @@
     <title>Tienda Motorola</title>
   </head>
   <body>
-      <div class="cointaner-fluid">
+      <div class="cointaner">
         <?php include_once("navbar.php") ?>
        <div class="">
         <?php include_once("body.php") ?>

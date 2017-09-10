@@ -1,3 +1,31 @@
+body {
+
+    box-sizing: border-box!important;
+    padding-top: 54px;
+}
+
+.navbar-nav {
+    text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+
+
+.navbar-brand {
+  display: inline-block;
+  align-items: center;
+  position: absolute;
+}
+.logo img {
+  width: 300px;
+}
+
+
+
+
 @media (max-width: 767px){
 .carousel .row .span3 {
 display: block;
