@@ -88,16 +88,7 @@ font-weight: bold;
 }
 
 
-@media (max-width: 768px){
-.carousel .row .span3 {
-display: block;
-float: left;
-width: 25%;
-margin-left: 0;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
+
 .navbar-brand>img  {
   position: relative;
   left: 50%;

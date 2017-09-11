@@ -13,18 +13,24 @@
     <link href="css/styles.css" rel="stylesheet">
     <!-- Chicos cree un css para el foot y esta puesto en la carpeta corespondiente-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <!-- Chicos cree un css para el middle-body y esta puesto en la carpeta corespondiente-->
+    <link rel="stylesheet" type="text/css" href="css/middle-body.css">
+
     <title>Tienda Motorola</title>
+  <!-------------------------------------------------------------------------------------------------------------------------------------- -->
   </head>
   <body>
       <div class="cointaner">
             <?php include_once("navbar.php") ?>
-          <div class="">
-            <?php include_once("body.php") ?>
+
+          <div class="middle-body">
+              <?php include_once("middle-body.php") ?>
           </div>
+
           <div class="foot">
             <?php include_once("footer.php") ?>
           </div>
-     </div>
+   </div>
 
 
   </body>
