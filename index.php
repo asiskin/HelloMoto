@@ -23,9 +23,9 @@
       <div class="cointaner">
             <?php include_once("navbar.php") ?>
 
-    <!--      <div class="middle-body">
+         <div class="middle-body">
               <?php include_once("middle-body.php") ?>
-          </div> -->
+          </div>
 
           <div class="foot">
             <?php include_once("footer.php") ?>
