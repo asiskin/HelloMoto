@@ -3,8 +3,29 @@
 body {
     box-sizing: border-box!important;
     height: 100%;
+    font-family:"Raleway";
 
 }
+
+.polig{
+
+width:200px;
+height:200px;
+background:#444444;
+font-family:"Raleway";
+font-weight:bold;
+color:#EEEEEE;
+}
+
+.polig p{
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+text-align: center;
+}
+
 
 .navbar-default {
   margin: 0 auto;
@@ -14,6 +35,9 @@ body {
 
 }
 
+select {
+  width: 80px!important;
+}
 .navbar-nav > ul {
   position: absolute;
   left: 200px;
@@ -46,8 +70,6 @@ font-weight: bold;
   width: auto;
   margin-right: 50px;
   margin-bottom: 40px;
-
-
 
 }
 
