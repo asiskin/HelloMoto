@@ -1,10 +1,10 @@
 #myFooter {
-	background-color: #000000;
+	background-color: rgb(36,127,213);
 	color:white;
 }
 
 #myFooter .footer-copyright{
-	background-color: #000;
+	background-color: rgb(36,127,213);
 	padding-top:3px;
 	padding-bottom:3px;
 	text-align: center;
