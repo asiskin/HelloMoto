@@ -19,7 +19,7 @@
 		<!-- /MARKETING LINE--></div>
 
 <hr>
-<div class="container" name="ofertas">
+<div class="container">
   <div class="page-header">
     <h1>EQUIPOS EN STOCK MOTOROLA CRAZY</h1>
   </div>

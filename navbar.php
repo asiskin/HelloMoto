@@ -19,11 +19,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#ofertas">Ofertas </a></li>
-        <li><a href="faqs.php">Preguntas Frecuentas </a></li>
+        <li><a href="faq.php">Preguntas Frecuentas </a></li>
       </ul>
       <form class="navbar-form navbar-left navbar-moto" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Buscar Producto" size="80px">
+          <input type="text" class="form-control" placeholder="Buscar Producto" size="40px">
         </div>
         <button type="submit" class="btn btn-default">Buscar</button>
       </form>

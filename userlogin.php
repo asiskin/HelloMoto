@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,24 +15,24 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <!-- Chicos cree un css para el middle-body y esta puesto en la carpeta corespondiente-->
     <link rel="stylesheet" type="text/css" href="css/middle-body.css">
-     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-    <title>Tienda Motorola</title>
-  <!-------------------------------------------------------------------------------------------------------------------------------------- -->
+    <title><?php echo 'Usuario Logueado'?></title>
   </head>
-  <body>
-      <div class="cointaner">
-            <?php include_once("navbar.php") ?>
+<script type="javascript/text">
+    function Redirigir() {
+        alert("Usted será redirigido a la pagina de registracion");
+        location.href="registracion.php";
+      }
+</script>
+  <?php
+  require_once('navbar.php');
+  ?>
+  <?php
+    if (isset($_POST)) {
+    echo "<script>";
+    echo "Redirigir()";
+    echo "</script>";
+    }else{
+      echo "acceso exitoso";
+    }
 
-         <div class="middle-body">
-              <?php include_once("middle-body.php") ?>
-          </div>
-
-          <div class="foot">
-            <?php include_once("footer.php") ?>
-          </div>
-   </div>
-
-
-  </body>
-</html>
+   ?>
