@@ -17,7 +17,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
         <li><a href="#ofertas">Ofertas </a></li>
         <li><a href="faq.php">Preguntas Frecuentas </a></li>
       </ul>
@@ -28,7 +28,7 @@
         <button type="submit" class="btn btn-default">Buscar</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="registro.php">Registrate</a></li>
+        <li><a href="registracion.php">Registrate</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logueate<span class="caret"></span></a>
 			 <ul id="login-dp" class="dropdown-menu">

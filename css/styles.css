@@ -7,19 +7,8 @@ body {
 
 }
 
-<<<<<<< HEAD
 
- .navbar-default {
-  margin: 0 auto;
-  border: 0px;
-  border-radius: 0px;
-  padding-top: 10px;
-
-
-}
-
-=======
-.polig{
+.polig {
 
 width:200px;
 height:200px;
@@ -38,6 +27,11 @@ overflow: hidden;
 text-align: center;
 }
 
+select {
+  width: 95px!important;
+}
+
+
 
 .navbar-default {
   margin: 0 auto;
@@ -47,29 +41,20 @@ text-align: center;
 
 }
 
-select {
-  width: 80px!important;
-}
 .navbar-nav > ul {
   position: absolute;
   left: 200px;
 }
 
 
->>>>>>> 70882e8ae44376e276c3c81d4c2d292958c0f8f6
 .nav {
 font-size:  16px;
 font-weight: bold;
 }
-.navbar-moto {
-  position: relative;
-  left: 40%;
-  transform: translate(-50%);
-}
 
 .navbar-inverse {
-     background-color:  rgb(36,127,213);
-   }
+  background-color:  rgb(36,127,213);
+}
 
 
 .navbar-nav:hover {
@@ -82,22 +67,17 @@ font-weight: bold;
 
 
 }
+
 .navbar-brand>img {
-<<<<<<< HEAD
   height: 55px;
   width: auto;
-=======
   position: relative;
-  height: 55px;
   width: auto;
   margin-right: 50px;
   margin-bottom: 40px;
 
 }
 
->>>>>>> 70882e8ae44376e276c3c81d4c2d292958c0f8f6
-
-}
 
 #login-dp{
     min-width: 250px;
@@ -138,14 +118,6 @@ font-weight: bold;
 .btn-tw:hover{
     color: #fff;
     background-color:#59b5fa;
-}
-
-
-
-.navbar-brand>img  {
-  position: relative;
-  left: 50%;
-}
 }
 
 #myFooter {
@@ -254,15 +226,17 @@ font-weight: bold;
         transform: rotate(90deg);
         color: #454444;
     }
+
 @media screen and (max-width: 767px){
   #myFooter {
     text-align: center;
   }
-  
+
 }
 
 @media (max-width: 900px){
 .navbar-form { display: none}
 .navbar-brand>img  { margin: 0 auto;}
+#myFooter { text-align: center;}
 
 }

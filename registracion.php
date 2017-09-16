@@ -14,18 +14,13 @@
     <link href="css/styles.css" rel="stylesheet">
     <!-- Chicos cree un css para el foot y esta puesto en la carpeta corespondiente-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <!-- Chicos cree un css para el middle-body y esta puesto en la carpeta corespondiente-->
-    <link rel="stylesheet" type="text/css" href="css/middle-body.css">
-    <title><?php echo 'Registración'?></title>
+    <title> Registración </title>
   </head>
 <?php
 $meses = [
     1 => "Enero", 2 => "Febrero", 3 => "Marzo", 4 => "Abril", 5 => "Mayo", 6 => "Junio",
     7 => "Julio", 8 => "Agosto", 9 => "Septiembre", 10 => "Octubre", 11 => "Noviembre", 12 => "Diciembre"
 ];
-
-
-
 
 $nombre = $_POST['nombre'] ?? null;
 $apellido = $_POST['apellido'] ?? null;
@@ -62,18 +57,17 @@ if($_POST)
       header("Location:userlogin.php");
     }
 }
-
 ?>
+<div class="row">
+   <div class="col-sm-12">
+      <?php require_once('navbar.php');?>
+    </div>
+</div>
+<div class="container">
 
-<?php
-
-require_once('navbar.php');
-?>
-<div class="container reg-contain">
-
+  <br>
         <div class="row">
-          <br>
-            <?php if (count($arrayDeErrores) > 0) : ?>
+          <?php if (count($arrayDeErrores) > 0) : ?>
               <ul style="color:red;">
                   <?php foreach($arrayDeErrores as $error) : ?>
                     <li>
