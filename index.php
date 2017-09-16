@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <!-- Chicos cree un css para el middle-body y esta puesto en la carpeta corespondiente-->
     <link rel="stylesheet" type="text/css" href="css/middle-body.css">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <title>Tienda Motorola</title>
   <!-------------------------------------------------------------------------------------------------------------------------------------- -->

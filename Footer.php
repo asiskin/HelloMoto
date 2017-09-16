@@ -21,7 +21,7 @@
                 <div class="col-sm-3 myCols">
                     <h5>Soporte</h5>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="faq.php">FAQ</a></li>
                         <li><a href="#">Ayuda</a></li>
                         <li><a href="#">Foro</a></li>
                     </ul>

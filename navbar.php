@@ -19,7 +19,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#ofertas">Ofertas </a></li>
-        <li><a href="faqs.php">Preguntas Frecuentas </a></li>
+        <li><a href="faq.php">Preguntas Frecuentas </a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
