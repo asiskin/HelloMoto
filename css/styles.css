@@ -30,12 +30,7 @@ font-weight: bold;
      background-color:  rgb(36,127,213);
    }
 
-.navbar-right >li::after {
-  content: "|";
-  color: white;
-  padding: 0;
 
-}
 .navbar-nav:hover {
 
   color: rgb(36,127,213);

@@ -15,11 +15,13 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#ofertas">Ofertas </a></li>
         <li><a href="faqs.php">Preguntas Frecuentas </a></li>
       </ul>
+      <form class="navbar-form navbar-left navbar-moto" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Buscar Producto" size="80px">
         </div>
@@ -28,6 +30,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="registro.php">Registrate</a></li>
         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logueate<span class="caret"></span></a>
 			 <ul id="login-dp" class="dropdown-menu">
 				<li>
 					 <div class="row">
