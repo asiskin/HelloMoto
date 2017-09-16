@@ -6,45 +6,49 @@ body {
 
 }
 
-.navbar-default {
+
+ .navbar-default {
   margin: 0 auto;
   border: 0px;
   border-radius: 0px;
-  padding: 10px;
+  padding-top: 10px;
+
+
 }
 
-.nav > li.active > a {
-  background-color: rgb(36,127,213);
-}
 .nav {
 font-size:  16px;
 font-weight: bold;
 }
+.navbar-moto {
+  position: relative;
+  left: 40%;
+  transform: translate(-50%);
+}
 
 .navbar-inverse {
      background-color:  rgb(36,127,213);
-     color: white!important;
-     }
+   }
 
+.navbar-right >li::after {
+  content: "|";
+  color: white;
+  padding: 0;
+
+}
 .navbar-nav:hover {
 
   color: rgb(36,127,213);
-
 }
 .navbar-brand {
   padding: 0px;
   margin-right: 20px;
 }
 .navbar-brand>img {
-  display: inline-block;
   height: 55px;
   width: auto;
-  position: relative;
-  margin-left: 320px;
-  margin-bottom: 40px;
+
 }
-
-
 
 #login-dp{
     min-width: 250px;
