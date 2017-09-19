@@ -34,6 +34,7 @@ select {
 
 .navbar-nav > li a {
   color: white!important;
+
 }
 
 .navbar-nav > li a:hover {
@@ -77,6 +78,8 @@ font-weight: bold;
 .navbar-brand>img {
   height: 55px;
   width: auto;
+  margin-right: 20px;
+  margin-left: 20px;
 
 
 
