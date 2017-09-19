@@ -10,13 +10,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
     <!-- Chicos cree un css para el foot y esta puesto en la carpeta corespondiente-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <!-- Chicos cree un css para el middle-body y esta puesto en la carpeta corespondiente-->
     <link rel="stylesheet" type="text/css" href="css/middle-body.css">
-     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Tienda Motorola</title>
   <!-------------------------------------------------------------------------------------------------------------------------------------- -->
   </head>
