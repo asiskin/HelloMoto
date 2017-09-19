@@ -71,19 +71,14 @@ font-weight: bold;
 }
 .navbar-brand {
   padding: 0px;
-  margin-right: 20px;
-  margin-left: 200px;
+  }
 
-
-}
 
 .navbar-brand>img {
   height: 55px;
   width: auto;
-  position: relative;
-  width: auto;
-  margin-right: 50px;
-  margin-bottom: 40px;
+
+
 
 }
 
@@ -237,15 +232,27 @@ font-weight: bold;
     }
 
 @media screen and (max-width: 767px){
+  .navbar-form { display: none
+  }
   #myFooter {
     text-align: center;
   }
+  .navbar-header a{
+    position: absolute;
+  }
+  .navbar-brand  {
+    position: relative;
+    right: 50%;
+    transform: translate(50%);
+
+
+    }
 
 }
 
 @media (max-width: 900px){
-.navbar-form { display: none}
-.navbar-brand>img  { margin: 0 auto;}
+
 #myFooter { text-align: center;}
+
 
 }
