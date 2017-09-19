@@ -35,6 +35,7 @@
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 
+
 		<div class="carousel4equipos">
 
 		 <div class="contenedor">
@@ -43,7 +44,7 @@
 										</div>
 
 
-					<div id="myCarousel2" class="carousel slide">
+					<div id="myCarousel2" class="carousel slide"data-interval="3500"data-ride="carousel">
 					<!-- Carousel items -->
 
 
@@ -207,7 +208,7 @@
 									</div>
 
 
-				<div id="myCarousel3" class="carousel slide">
+				<div id="myCarousel3" class="carousel slide"data-interval="3500"data-ride="carousel">
 				<!-- Carousel items -->
 
 
