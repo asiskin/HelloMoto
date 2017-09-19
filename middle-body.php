@@ -62,7 +62,7 @@
 																														 <a href="#"><img src="images\CELULARES\moto-c-plus.png"></a>
 
 																												 <h3>Moto C plus</h3>
-																												 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																												 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 																						 </div>
 																	 </div>
 
@@ -75,7 +75,7 @@
 																											<a href="#"><img src="images\CELULARES\moto-c.png"></a>
 
 																								 <h3>Moto C</h3>
-																								 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																								 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 																				</div>
 																	</div>
 
@@ -88,7 +88,7 @@
 																							 <a href="#"><img src="images\CELULARES\moto-e.png"></a>
 
 																					 <h3>Moto E</h3>
-																					 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																					 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 																			 </div>
 																</div>
 
@@ -101,7 +101,7 @@
 																								<a href="#"><img src="images\CELULARES\moto-g5-plus.png"></a>
 
 																					 <h3>Moto G5 Plus</h3>
-																					 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																					 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 																	</div>
 																</div>
 
@@ -123,7 +123,7 @@
 
 																									 <h3>Moto G5</h3>
 
-																									 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																									 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 
 																				 </div>
 																		 </div>
@@ -136,7 +136,7 @@
 																										<a href="#"><img src="images\CELULARES\moto-z-play-music-edition.png"></a>
 
 																							 <h3>Moto Z Play Music Edition</h3>
-																							 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																							 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 																			</div>
 																		</div>
 
@@ -149,7 +149,7 @@
 																											 <a href="#"><img src="images\CELULARES\moto-z-play-photo-pro-edition.png"></a>
 
 																									 <h3>Moto Z Play Photo Pro Edition</h3>
-																									 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																									 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 																			 </div>
 																		 </div>
 
@@ -163,7 +163,7 @@
 																											 <a href="#"><img src="images\CELULARES\moto-z2-play.png"></a>
 
 																									<h3>Moto Z2 Play</h3>
-																									<p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																									<p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 																				 </div>
 																			 </div>
 
@@ -227,7 +227,7 @@
 		                                                           <a href="#"><img src="images\CELULARES\moto-c-plus.png"></a>
 
 		                                                       <h3>Moto C plus</h3>
-		                                                       <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+		                                                       <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                           </div>
 		                                 </div>
 			 </div>
@@ -246,7 +246,7 @@
 		                                                    <a href="#"><img src="images\CELULARES\moto-c.png"></a>
 
 		                                               <h3>Moto C</h3>
-		                                               <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+		                                               <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                      </div>
 		                                </div>
 			</div>
@@ -264,7 +264,7 @@
 		                                             <a href="#"><img src="images\CELULARES\moto-e.png"></a>
 
 		                                         <h3>Moto E</h3>
-		                                         <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+		                                         <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                     </div>
 		                              </div>
 
@@ -283,7 +283,7 @@
 		                                              <a href="#"><img src="images\CELULARES\moto-g5-plus.png"></a>
 
 		                                         <h3>Moto G5 Plus</h3>
-		                                         <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+		                                         <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                </div>
 		                              </div>
 
@@ -305,7 +305,7 @@
 		                                                     <a href="#"><img src="images\CELULARES\moto-g5.png"></a>
 
 		                                                 <h3>Moto G5</h3>
-		                                                 <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+		                                                 <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                       </div>
 		                                   </div>
 
@@ -322,7 +322,7 @@
 		                                                  <a href="#"><img src="images\CELULARES\moto-z-play-music-edition.png"></a>
 
 		                                             <h3>Moto Z Play Music Edition</h3>
-		                                             <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+		                                             <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                    </div>
 		                                  </div>
 
@@ -341,7 +341,7 @@
 
 		                                                 <h3>Moto Z Play Photo Pro Edition</h3>
 
-																										<p>	 <a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+																										<p>	 <a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                     </div>
 		                                   </div>
 
@@ -358,7 +358,7 @@
 		                                                     <a href="#"><img src="images\CELULARES\moto-z2-play.png"></a>
 
 		                                                <h3>Moto Z2 Play</h3>
-		                                                <p><a class="btn btn-large btn-block" href="http://www.bootstraptor.com">View details »</a></p>
+		                                                <p><a class="btn btn-large btn-block" href="index.php">View details »</a></p>
 		                                       </div>
 		                                     </div>
 
@@ -424,7 +424,7 @@ Carga
 
 Cargador Turbopower para carga más rápida.
 
-			 <p><a href="#" class="btn btn-primary" role="button">Ver Caracteristicas</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+			 <p><a href="#" class="btn btn-primary" role="button">Ver</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
 		 </div>
 
  </div>
@@ -454,7 +454,7 @@ Cargador Turbopower para carga más rápida.
 
 				Cargador Turbopower para carga más rápida.
 
-			<p><a href="#" class="btn btn-primary" role="button">Ver Caracteristicas</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+			<p><a href="#" class="btn btn-primary" role="button">Ver</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
 		</div>
 
 </div>
