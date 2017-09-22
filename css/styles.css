@@ -130,6 +130,7 @@ font-weight: bold;
 #myFooter {
   background-color: rgb(36,127,213);
   color:white;
+  font-family: "Raleway"!important;
 }
 
 #myFooter .footer-copyright{
