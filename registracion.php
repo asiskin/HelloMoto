@@ -50,11 +50,11 @@ if($_POST)
       $nombreDelArchivo = $_FILES["avatar"]["name"];
       $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
 
-      $nombre = dirname(__FILE__) . "/img/" . $_POST["username"] . ".$extension";
+      $nombre = dirname(__FILE__) . "/images/" . $_POST["username"] . ".$extension";
 
       move_uploaded_file($archivo, $nombre);
+      
 
-      header("Location:userlogin.php");
     }
 }
 ?>
@@ -121,7 +121,12 @@ if($_POST)
                     <div class="form-group ">
                       <div>
                         <br>
-                        <input type="file" name="avatar">
+
+                                          <label> Subi tu foto  </label>
+                                          <p> <input type="file" name="avatar"> </p>
+                                          <!--<p><input type="submit" name="upload" value="Carga tu foto" ><p>-->
+
+
                       </div>
                     </div>
                 </div>

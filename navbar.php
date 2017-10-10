@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.php">
         <img src="./images/logoblanco.png"> </img>
       </a>
     </div>
@@ -37,8 +37,8 @@
 							<div class="col-md-12">
 								Login via
 								<div class="social-buttons">
-									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+									<a href="http://www.facebook.com/login-dp" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="http://www.twitter.com/login-dp" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 								</div>
                                 o con tu e-mail
 								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
@@ -62,7 +62,7 @@
 								 </form>
 							</div>
 							<div class="bottom text-center">
-								Sos nuevo? <a href="registracion.php"><b>Registrate</b></a>
+								Sos nuevo? <a class="navbar-inverse" href="registracion.php" name="registro">Registrate</a>
 							</div>
 					 </div>
 				</li>

@@ -3,6 +3,8 @@ session_start();
 
 if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
   loguear($_COOKIE["usuarioLogueado"]);
+
+
 }
 
 function validarLogin() {
@@ -37,13 +39,13 @@ function validarInformacion() {
 
   $nombreDelArchivo = $_FILES["avatar"]["name"];
   $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
-
-  if($_FILES["avatar"]["error"] != UPLOAD_ERR_OK) {
+    if($_FILES["avatar"]["error"] != UPLOAD_ERR_OK) {
     $arrayDeErrores["avatar"] = "Hubo un error al subir el archivo";
   }
   else if ($extension != "jpg" && $extension != "jpeg" && $extension != "gif" && $extension !=  "png") {
     $arrayDeErrores["avatar"] = "Necesitamos que el avatar sea una foto";
   }
+
 
 
   if($_POST["nombre"] == "") {
@@ -124,7 +126,9 @@ function traerPorEmail($email) {
     $usuario = json_decode($linea, true);
 
     if ($usuario["email"] == $email) {
-      return $usuario;
+      $_SESSION["usuarioLogueado"] = $email;
+      $_SESSION["username"] = $_POST["username"];
+            return $usuario;
     }
 
     $linea = fgets($recurso);
@@ -136,6 +140,7 @@ function traerPorEmail($email) {
 
 function loguear($email) {
   $_SESSION["usuarioLogueado"] = $email;
+  $_SESSION["username"] = $username;
 }
 
 function logout() {
