@@ -1,38 +1,60 @@
 <?php
 session_start();
 
+
 if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
   loguear($_COOKIE["usuarioLogueado"]);
 
 
 }
 
-function validarLogin() {
-  $arrayDeErrores= [];
-  var_dump($_POST("terminos"));
-  if($_POST["email"] == "") {
-    $arrayDeErrores["email"] = "El campo mail no puede estar vacío";
-  }
-  else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
-    $arrayDeErrores["email"] = "Ingrese un e-mail válido";
-  }
-  else if (traerPorEmail($_POST["email"]) == NULL) {
-    $arrayDeErrores["email"] = "El usuario no ha sido encontrado";
-  }
-  else {
+/*
+function validarLogin()------------
+
+function validarInformacion()-------
+
+function armarUsuario($datos)-------
+
+function guardarUsuario($usuario)----
+
+function traerTodos()---------------
+
+function traerPorEmail($email)------
+
+function loguear($email)-----------
+
+function logout()------------------
+
+function estaLogueado()-----------
+
+function getUsuarioLogueado()------
+
+function recordar($email)----------
+
+function validarLogin()-----------
+*/
+      $arrayDeErrores= [];
+
+    if($_POST["email"] == "") {
+      $arrayDeErrores["email"] = "El campo mail no puede estar vacío";
+    }
+    else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
+      $arrayDeErrores["email"] = "Ingrese un e-mail válido";
+    }
+//-----------------para mi si es login no va esto del post si ya estaba posteado, porque justamente ya va a estar posteado, para que no lo ingrese devuelta
+    // else if (traerPorEmail($_POST["email"]) != NULL) {
+    //   $arrayDeErrores["email"] = "Mail ya ingresado ";
+    // }
+
     if (strlen($_POST["contrasena"]) < 8) {
       $arrayDeErrores["contrasena"] = "Ingrese una contraseña de al menos 8 caracteres";
     }
-    else {
-      $usuario = traerPorEmail($_POST["email"]);
-
-      if (password_verify($_POST["contrasena"],$usuario["contrasenia"]) == false) {
-        $arrayDeErrores[] = "La contraseña no coincide";
-      }
+    else if (preg_match('/[A-Z]/', $_POST["contrasena"]) == false) {
+      $arrayDeErrores["contrasena"] = "Necesito que tu contraseña tenga al menos 1 mayuscula";
     }
+
+    return $arrayDeErrores;
   }
-  return $arrayDeErrores;
-}
 
 function validarInformacion() {
   $arrayDeErrores = [];
@@ -137,7 +159,7 @@ function traerPorEmail($email) {
 
   return null;
 }
-
+//-------------------------------------------------esta bien esto de abajo???username nunca lo traje ni le di valor???? me parece que no.....-------------------------
 function loguear($email) {
   $_SESSION["usuarioLogueado"] = $email;
   $_SESSION["username"] = $username;

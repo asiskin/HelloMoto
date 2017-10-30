@@ -36,13 +36,21 @@ select {
   color: white!important;
 
 }
+.navbar-nav > li a {
+  color: white!important;
+
+}
 
 .navbar-nav > li a:hover {
 background: white!important;
 color: rgb(36,127,213)!important;
 
 }
+.navbar-nav li a:hover{
+background: white!important;
+color: rgb(36,127,213)!important;
 
+}
 .navbar-default {
   margin: 0 auto;
   border: 0px;
