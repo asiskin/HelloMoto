@@ -30,9 +30,10 @@ function estaLogueado()-----------
 function getUsuarioLogueado()------
 
 function recordar($email)----------
-
-function validarLogin()-----------
 */
+
+function validarLogin()
+
       $arrayDeErrores= [];
 
     if($_POST["email"] == "") {
