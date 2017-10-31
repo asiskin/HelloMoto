@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 
 if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
@@ -8,31 +8,8 @@ if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
 
 }
 
-/*
-function validarLogin()------------
 
-function validarInformacion()-------
-
-function armarUsuario($datos)-------
-
-function guardarUsuario($usuario)----
-
-function traerTodos()---------------
-
-function traerPorEmail($email)------
-
-function loguear($email)-----------
-
-function logout()------------------
-
-function estaLogueado()-----------
-
-function getUsuarioLogueado()------
-
-function recordar($email)----------
-*/
-
-function validarLogin()
+function validarLogin() {
 
       $arrayDeErrores= [];
 
@@ -42,10 +19,10 @@ function validarLogin()
     else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
       $arrayDeErrores["email"] = "Ingrese un e-mail válido";
     }
-//-----------------para mi si es login no va esto del post si ya estaba posteado, porque justamente ya va a estar posteado, para que no lo ingrese devuelta
-    // else if (traerPorEmail($_POST["email"]) != NULL) {
-    //   $arrayDeErrores["email"] = "Mail ya ingresado ";
-    // }
+
+    else if (traerPorEmail($_POST["email"]) != NULL) {
+      $arrayDeErrores["email"] = "Mail ya ingresado ";
+    }
 
     if (strlen($_POST["contrasena"]) < 8) {
       $arrayDeErrores["contrasena"] = "Ingrese una contraseña de al menos 8 caracteres";
@@ -58,6 +35,8 @@ function validarLogin()
   }
 
 function validarInformacion() {
+
+
   $arrayDeErrores = [];
 
   $nombreDelArchivo = $_FILES["avatar"]["name"];

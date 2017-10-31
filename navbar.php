@@ -1,5 +1,6 @@
 <?php
-        require("./functions/funciones.php");
+        require_once("./functions/funciones.php");
+
         if(!isset($_SESSION)){session_start();}
 
         $email = $_POST['email'] ?? null;
@@ -28,7 +29,7 @@
 
                                           session_start();
                                           $_SESSION=$_POST;
-                                          $_POST=null;
+                                          $_POST= null;
                                           header("Location: user-logueado.php");
                                         }
 
@@ -68,7 +69,7 @@
 
       <ul class="nav navbar-nav navbar-right">
 <!-----------------------------LOGUEADO EL USUARIO!!------------------------------------------------------>
-        <li><a><?php if(isset($_SESSION)){echo "BIENVENIDX ".$_SESSION['email'];} ?></a></li>
+        <li><a><?php if(isset($_SESSION['email'])){echo "BIENVENIDX ".$_SESSION['email'];} ?></a></li>
 
         <li><a href="registracion.php">Registrate</a></li>
         <li class="dropdown">

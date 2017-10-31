@@ -17,6 +17,9 @@
     <title> Registración </title>
   </head>
 <?php
+
+ require_once("./functions/funciones.php");
+
 $meses = [
     1 => "Enero", 2 => "Febrero", 3 => "Marzo", 4 => "Abril", 5 => "Mayo", 6 => "Junio",
     7 => "Julio", 8 => "Agosto", 9 => "Septiembre", 10 => "Octubre", 11 => "Noviembre", 12 => "Diciembre"
@@ -33,9 +36,8 @@ $mes = $_POST['fnac_mes'] ?? null;
 $anio = $_POST['fnac_anio'] ?? null;
 $descripcion = $_POST['descripcion'] ?? null;
 
-/* METO LAS VALIDACIONES CON funciones.PHP */
-require_once("./functions/funciones.php");
-$arrayDeErrores = [];
+
+
 if($_POST)
 {
 
@@ -73,14 +75,14 @@ if($_POST)
 ?>
 <div class="row">
    <div class="col-sm-12">
-      <?php require_once('navbar.php');?>
+      <?php require('navbar.php');?>
     </div>
 </div>
 <div class="container">
 
   <br>
         <div class="row">
-          <?php if (count($arrayDeErrores) > 0) : ?>
+          <?php if($_POST){if(count($arrayDeErrores) > 0 && $_POST){?>
               <ul style="color:red;">
                   <?php foreach($arrayDeErrores as $error) : ?>
                     <li>
@@ -88,7 +90,7 @@ if($_POST)
                     </li>
                   <?php endforeach; ?>
               </ul>
-            <?php endif;?>
+            <?php } } ?>
             <form role="form" action="registracion.php" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="form-group col-sm-6">

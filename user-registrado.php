@@ -40,7 +40,7 @@
   <body>
 <div class="cointaner">
 
-      <?php include_once("navbar.php") ?>
+      <?php require_once("navbar.php") ?>
 
                                     <div id="userlogin">USUARIO REGISTRADO CON EXITO!!!
 
