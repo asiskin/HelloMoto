@@ -19,3 +19,4 @@
 {"nombre":"roberto","apellido":"giordano","username":"robertogiordano","email":"roberto@roberto.com","contrasenia":"$2y$10$aE8A3j2Z8aZX2DTEH8gZbO8NsP4Nvp2pxgc.gXz9tWNpRa3AtxS.q","genero":"0","f_nac":"12-7-2000","descripcion":"hola soy roberto"}
 {"nombre":"luis","apellido":"gomez","username":"luisgomez","email":"luis@luis.com","contrasenia":"$2y$10$KNl989StB4dNGSnvKvhqC.87Uiw5Mc6cmzA8JGB2\/1Tp5bVYvo9Gu","genero":"0","f_nac":"15-7-2012","descripcion":"Hola luis"}
 {"nombre":"lolo","apellido":"lopez","username":"lololopezlololopez","email":"lolo@lopez.com","contrasenia":"$2y$10$dmfQw0W1bMvMOaPfNe8fVu\/x88pNQAnVP9r17l13budkm.BJjseWa","genero":"0","f_nac":"14-8-2002","descripcion":"hola soy lolo"}
+{"nombre":"michelle","apellido":"montero","username":"michelle","email":"michelle@mich.com","contrasenia":"$2y$10$X9UeOCR8RJ.d57wf5ECrROBtH0nTuRbqtrsuSuiFIt8xzd00O5CNG","genero":"1","f_nac":"15-8-2007","descripcion":"srgwrg"}

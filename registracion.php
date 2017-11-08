@@ -51,7 +51,8 @@ if(isset($_POST["nombre"]))
                                           $nombre = dirname(__FILE__) . "/images/" . $_POST["username"] . ".$extension";
 
                                           move_uploaded_file($archivo, $nombre);
-
+                                          
+                                          guardarUsuario(armarUsuario($_POST));
 
                                         logout();
 
