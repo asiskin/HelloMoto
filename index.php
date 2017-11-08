@@ -19,16 +19,16 @@
   </head>
   <body>
        <?php require_once("./functions/funciones.php");?>
-       
+
       <div class="cointaner">
-            <?php require_once("navbar.php") ?>
+            <?php require_once("navbar.php"); ?>
 
          <div class="middle-body">
-              <?php require_once("middle-body.php") ?>
+              <?php require_once("middle-body.php"); ?>
           </div>
 
           <div class="foot">
-            <?php require_once("footer.php") ?>
+            <?php require_once("footer.php"); ?>
           </div>
    </div>
 

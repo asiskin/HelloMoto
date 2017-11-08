@@ -1,7 +1,7 @@
 # Tienda Motorola trabajo integrador Digital House
 
 
-function validarLogin()------------
+function validarLogin()------------valida datos ingresados,
 
 function validarInformacion()-------
 
@@ -15,10 +15,11 @@ function traerPorEmail($email)------
 
 function loguear($email)-----------
 
-function logout()------------------
+function logout()------------------borra $_COOKIES y borra $_SESSION, o sea log out!!
 
-function estaLogueado()-----------
+function estaLogueado()-----------session[usuariologueado] retorna true o false, dependiendo si esta logueado o no.
 
-function getUsuarioLogueado()------
+function getUsuarioLogueado()------RETORNA un ARRAY CON TODOS LOS DATOS DEL USUARIO que esta LOGUEADO en
+                                   SESSION[], y extrae estos datos del archivo JSON, con todos los datos del usuario.
 
-function recordar($email)----------recordar el email en coockies por 3600 milisegundos creo o segundos.
+function recordarUsuario($email)----------recordar el email en coockies por una hora o 3600 seg.

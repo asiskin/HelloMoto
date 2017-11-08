@@ -38,37 +38,26 @@ $descripcion = $_POST['descripcion'] ?? null;
 
 
 
-if($_POST)
+if(isset($_POST["nombre"]))
 {
 
-    $arrayDeErrores = validarInformacion();
+    $arrayDeErrores = validarRegistracion();
 
     if(count($arrayDeErrores) == 0) {
-
-                                          $usuario = armarUsuario($_POST);
-                                          guardarUsuario($usuario);
 
                                           $archivo = $_FILES["avatar"]["tmp_name"];
                                           $nombreDelArchivo = $_FILES["avatar"]["name"];
                                           $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
-
                                           $nombre = dirname(__FILE__) . "/images/" . $_POST["username"] . ".$extension";
 
                                           move_uploaded_file($archivo, $nombre);
 
 
-                                          if(isset($_SESSION)){
-                                                                session_unset();
-                                                                session_destroy();
-                                                              }
+                                        logout();
 
-                                                                session_start();
-                                                                $_SESSION=$_POST;
-                                                                $_POST=null;
-
-
-
-                                          header('Location: user-registrado.php');
+                                        INICIAR_SESION_USUARIO($_POST["email"]);//setea $_SESSION[usuarioLogueado] y $_SESSION[username]
+                                        $_POST=null;
+                                        header('Location: user-registrado.php');
 
                                       }
 }
@@ -82,7 +71,7 @@ if($_POST)
 
   <br>
         <div class="row">
-          <?php if($_POST){if(count($arrayDeErrores) > 0 && $_POST){?>
+<?php if(isset($_POST["nombre"])){if(count($arrayDeErrores) > 0 ){?>
               <ul style="color:red;">
                   <?php foreach($arrayDeErrores as $error) : ?>
                     <li>
@@ -90,7 +79,7 @@ if($_POST)
                     </li>
                   <?php endforeach; ?>
               </ul>
-            <?php } } ?>
+<?php } } ?>
             <form role="form" action="registracion.php" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="form-group col-sm-6">

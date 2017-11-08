@@ -2,13 +2,7 @@
 
 
 
-if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
-  loguear($_COOKIE["usuarioLogueado"]);
-
-
-}
-
-
+//------------------------------------------------------------------------------------------------------------
 function validarLogin() {
 
       $arrayDeErrores= [];
@@ -20,9 +14,6 @@ function validarLogin() {
       $arrayDeErrores["email"] = "Ingrese un e-mail válido";
     }
 
-    else if (traerPorEmail($_POST["email"]) != NULL) {
-      $arrayDeErrores["email"] = "Mail ya ingresado ";
-    }
 
     if (strlen($_POST["contrasena"]) < 8) {
       $arrayDeErrores["contrasena"] = "Ingrese una contraseña de al menos 8 caracteres";
@@ -33,8 +24,8 @@ function validarLogin() {
 
     return $arrayDeErrores;
   }
-
-function validarInformacion() {
+//------------------------------------------------------------------------------------------------------------
+function validarRegistracion() {
 
 
   $arrayDeErrores = [];
@@ -69,7 +60,7 @@ function validarInformacion() {
   else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
     $arrayDeErrores["email"] = "Ingrese un e-mail válido";
   }
-  else if (traerPorEmail($_POST["email"]) != NULL) {
+  else if (VER_SI_EXISTE_USUARIO($_POST["email"]) == true) {
     $arrayDeErrores["email"] = "Mail ya ingresado ";
   }
 
@@ -88,7 +79,7 @@ function validarInformacion() {
 
   return $arrayDeErrores;
 }
-
+//------------------------------------------------------------------------------------------------------------
 function armarUsuario($datos)  {
   return [
     "nombre" => $datos["nombre"],
@@ -101,12 +92,12 @@ function armarUsuario($datos)  {
     "descripcion" => $datos["descripcion"]
   ];
 }
-
+//------------------------------------------------------------------------------------------------------------
 function guardarUsuario($usuario) {
   $json = json_encode($usuario);
   file_put_contents("./json/usuarios.json", $json . PHP_EOL, FILE_APPEND);
 }
-
+//------------------------------------------------------------------------------------------------------------
 function traerTodos() {
   $usuarios = [];
 
@@ -120,38 +111,60 @@ function traerTodos() {
 
   return $usuarios;
 }
-
-function traerPorEmail($email) {
+//------------------------------------------------------------------------------------------------------------
+function VER_SI_EXISTE_USUARIO($email) {
   $recurso = fopen("./json/usuarios.json", "r+");
   $linea = fgets($recurso);
   while ($linea != false) {
     $usuario = json_decode($linea, true);
 
     if ($usuario["email"] == $email) {
-      $_SESSION["usuarioLogueado"] = $email;
-      $_SESSION["username"] = $_POST["username"];
-            return $usuario;
+
+            return true;
+
     }
 
     $linea = fgets($recurso);
   }
   fclose($recurso);
 
-  return null;
-}
-//-------------------------------------------------esta bien esto de abajo???username nunca lo traje ni le di valor???? me parece que no.....-------------------------
-function loguear($email) {
-  $_SESSION["usuarioLogueado"] = $email;
-  $_SESSION["username"] = $username;
-}
 
-function logout() {
-  session_destroy();
-  setcookie("usuarioLogueado", "", -1);
 }
+//------------------------------------------------------------------------------------------------------------
 
+function INICIAR_SESION_USUARIO($email) {
+            $recurso = fopen("./json/usuarios.json", "r+");
+            $linea = fgets($recurso);
+            while ($linea != false) {
+                                      $usuario = json_decode($linea, true);
+
+                                      if ($usuario["email"] == $email) {
+                                              $_SESSION["usuarioLogueado"] = $usuario["email"];
+                                              $_SESSION["username"] = $usuario["username"];
+
+
+                                                                         }
+
+                                      $linea = fgets($recurso);
+                                    }
+
+            fclose($recurso);
+
+
+            }
+
+//------------------------------------------------------------------------------------------------------------
+
+function logout(){
+                            if(isset($_SESSION)){
+                                          session_unset();
+                                          session_destroy();
+                                          session_start();
+                                                }
+}
+//------------------------------------------------------------------------------------------------------------
 function estaLogueado() {
-  if (isset($_SESSION["usuarioLogueado"])) {
+  if (isset($_SESSION["email"])) {
     return true;
   }
   else {
@@ -159,16 +172,14 @@ function estaLogueado() {
   }
 }
 
-function getUsuarioLogueado() {
-  if (estaLogueado()) {
-    return traerPorEmail($_SESSION["usuarioLogueado"]);
-  }
-  else {
-    return NULL;
-  }
-}
-
-function recordar($email) {
+//------------------------------------------------------------------------------------------------------------
+function recordarUsuario($email) {
   setcookie("usuarioLogueado", $email, time()+3600);
 }
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+function no_recordarUsuario() {
+  setcookie("usuarioLogueado","",-1);
+}
+//------------------------------------------------------------------------------------------------------------
 ?>
